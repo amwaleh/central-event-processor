@@ -37,12 +37,12 @@
 
 const Config = require('../lib/config')
 const Mustache = require('mustache')
-const KafkaConfig = require('../../config/default.json').KAFKA
+const KafkaConfig = require('../../config/default.js').KAFKA
 const Logger = require('@mojaloop/central-services-shared').Logger
 const Uuid = require('uuid4')
 const Kafka = require('./kafka')
 const Enum = require('./enum')
-
+console.log({KafkaConfig})
 /**
  * The Producer config required
  *
